@@ -1,0 +1,101 @@
+* {
+	box-sizing: border-box;
+	font-family: Verdana, Arial, sans-serif;
+}
+
+/*Menu Boxes*/
+.menu-heading {
+	font-size: 175%;
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+
+.menu-box {
+	border: 1px solid black;
+	overflow: hidden;
+	height: 273px;
+	margin-top: 20px;
+	margin-right: 10px;
+	margin-left: 10px;
+	background-color: #A9A9A9;
+}
+
+.menu-box-title {
+	float: right;
+	font-size: 125%;
+	text-align: center;
+	border: 1px solid black;
+	border-top: 0;
+	border-right: 0;
+	margin-bottom: 5px;
+	width: 35%;
+
+}
+
+.menu-box-text {
+	clear: right;
+	padding: 10px;
+}
+
+.menu-box-color-1 {
+	background-color: #BA4F4F;
+	color: #000000;
+}
+
+.menu-box-color-2 {
+	background-color: #F34646;
+	color: #FFFFFF;
+}
+
+.menu-box-color-3 {
+	background-color: #E8DF67;
+	color: #000000;
+}
+
+/*Responsive framework*/
+.row {
+	width: 100%;
+}
+
+/*Desktop view*/
+
+@media (min-width: 992px) {
+	.col-lg-4 {
+		float: left;
+		width: 33.33%;
+	}
+
+}
+
+
+/*Tablet view*/
+@media (min-width:768px) and (max-width: 991px) {
+	.col-md-6, .col-md-12 {
+		float: left;
+	}
+
+	.col-md-6 {
+		width: 50%;
+	}
+
+	.col-md-12 {
+		width: 100%;
+	}
+
+	.menu-box-md {
+		height: 183px;
+	}
+}
+
+/*Mobile view*/
+@media (max-width: 767px) {
+	.col-sm-12 {
+		float: left;
+		width: 100%;
+	}
+
+	.menu-box-sm {
+		height: 197px;
+	}
+}
